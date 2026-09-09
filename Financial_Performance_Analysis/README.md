@@ -59,130 +59,36 @@ The project maintains separate versions of the dataset to distinguish between th
 
 ### Data Flow
 
-```text
-Raw Excel Dataset
-       ↓
-Data Cleaning & Preparation
-       ↓
-Cleaned Excel Dataset
-       ↓
-SQL Analysis & Validation
-       ↓
-Power BI Data Model
-       ↓
-Interactive Dashboard
+## 🔄 Data Flow Mapping
 
-## Tools & Technologies
+*   📦 **Step 1: Raw Excel Dataset**
+    *   *Action:* Initial data extraction and structural audit.
+*   🔽
+*   🧼 **Step 2: Data Cleaning & Preparation**
+    *   *Action:* Standardizing data schemas and dropping corrupted rows.
+*   🔽
+*   📊 **Step 3: Cleaned Excel Dataset**
+    *   *Action:* Exporting verified data tables for database ingestion.
+*   🔽
+*   🔍 **Step 4: SQL Analysis & Validation**
+    *   *Action:* Writing QA test scripts and calculating baseline KPIs.
+*   🔽
+*   🧱 **Step 5: Power BI Data Model**
+    *   *Action:* Structuring star-schema relationships and writing core DAX measures.
+*   🔽
+*   🎨 **Step 6: Interactive Executive Dashboard**
+    *   *Action:* Building front-end visuals, KPI cards, and cross-filtering layouts.
+
+---
+
+## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
-|---|---|
-| Microsoft Excel | Raw data handling, cleaning, and preparation |
-| MySQL | SQL analysis, KPI calculation, and validation |
-| Power BI | Data modeling, visualization, dashboard development, and interaction analysis |
-| Microsoft Word | Business Requirements Document and Case Study documentation |
-| GitHub | Project documentation, version control, and portfolio presentation |
-
----
-
-## Business Analyst Workflow
-
-The project was completed using the following analytical workflow:
-
-```text
-Raw Transactional Data
-        ↓
-Data Cleaning & Preparation
-        ↓
-Business Requirements Document
-        ↓
-SQL Analysis & KPI Validation
-        ↓
-Power BI Dashboard Development
-        ↓
-KPI Reconciliation & QA
-        ↓
-Business Insights
-        ↓
-Recommendations & Expected Impact
-
----
-
-##  Key KPIs
-The project focuses on the following core financial and operational KPIs:
-* **Total Sales / Revenue:** Total revenue generated from the analyzed transactions.
-* **Total Profit:** Total profit generated across the analyzed transactions.
-* **Gross Profit Margin (GPM):** Measures the proportion of revenue retained as profit.
-  \[\text{GPM} = \frac{\text{Total Profit}}{\text{Total Sales}} \times 100\]
-* **Distinct Order Count:** Represents the number of unique orders rather than the number of transaction rows (crucial since a single order may contain multiple products/line items).
-* **Category Sales & Profit:** Breakdown of financial metrics by product/service categories.
-* **Segment & Profitability Performance:** Deep dive into different business segments to analyze underlying health.
-
----
-
-##  Dashboard Preview
-The Power BI dashboard provides an interactive overview of financial performance and allows users to analyze metrics across relevant business dimensions. 
-
-* The complete Power BI report is available in: `04_PowerBI/Analysis_Dashboard.pbix`
-* *Note: A preview screenshot can be found in the repository folder.*
-
----
-
-##  Business Insights
-The dashboard analysis was utilized to identify relationships between revenue generation and profitability across different business categories and segments. 
-
-The analysis highlights that **strong sales performance does not automatically imply strong profitability.** Therefore, management must evaluate both **Revenue Contribution** and **Profit Contribution** simultaneously when making strategic decisions. 
-
-Particular attention should be given to categories or business areas that generate significant revenue but comparatively weaker profitability, as these indicate opportunities for pricing optimization, cost control, discount management, or product-level review.
-
----
-
-##  Business Recommendations
-The recommendations developed from this analysis focus on improving profitability while protecting revenue-generating business areas:
-
-1. **Protect High-Value Revenue Drivers:** Categories and segments contributing significantly to overall revenue should not be discontinued solely because their margins are lower. Instead, investigate the underlying causes of weaker profitability.
-2. **Investigate Low-Margin Performance:** Deep-dive into weak profitability areas at the product and transaction level to pinpoint drivers like excessive discounting, high product costs, pricing pressure, shipping/operational costs, or customer segment differences.
-3. **Optimize Rather Than Automatically Discontinue:** Before pulling a product line, evaluate actions like reviewing pricing, reducing unnecessary discounts, improving the product mix, controlling costs, and shifting focus toward higher-margin products.
-4. **Monitor Revenue and Profit Together:** Avoid evaluating financial performance using revenue alone. Future performance monitoring frameworks must track **Revenue Growth + Profit Growth + Profit Margin** to provide a complete view of financial health.
-
----
-
-## Expected Business Impact
-This analysis supports management decision-making by providing:
-* Improved visibility into overall financial performance.
-* A better understanding of key revenue and profitability drivers.
-* Quick identification of underperforming business areas.
-* More informed category and segment strategic decisions.
-* Reduced dependence on isolated, single-dimension financial metrics.
-* A repeatable framework for ongoing performance monitoring.
-
----
-
-##  Repository Structure
-```text
-Financial_Performance_Analysis/
-│
-├── 01_BRD/
-│   └── BRD.docx
-│
-├── 02_Data/
-│   ├── Superstore_RAW.xlsx
-│   │  
-│   │
-│   └── Superstore_Cleaned.xlsx
-│  
-│
-├── 03_SQL/
-│   └── kpi_reconciliation_qa_test.sql
-│
-├── 04_PowerBI/
-│   ├── Analysis_Dashboard.pbix
-│   └── Final_Dashboard.png
-│
-├── 05_Case_Study/
-│   └── Financial_Performance_Analysis_Case_Study.docx
-│
-└── README.md
-```
+| :--- | :--- |
+| 📊 **Microsoft Excel** | Raw data handling, cleaning, and structural preparation |
+| 🐬 **MySQL** | Backend relational SQL analysis, KPI calculation, and QA validation testing |
+| 📈 **Power BI** | Data modeling, star-schema optimization, and interactive dashboard development |
+| 📝 **Microsoft Word** | Formulating Business Requirements Documents (BRD) and corporate case studies |
 
 ---
 
